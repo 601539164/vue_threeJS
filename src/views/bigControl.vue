@@ -43,6 +43,7 @@ export default {
                 {
                     name: '首页',
                     goFunction: () => {
+                        console.log('app', app)
                         app.flyTo({
                             position: app.cameraPosition,
                             controls: app.controlsTarget

@@ -9,12 +9,18 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import { useStorage } from "@vueuse/core";
 import HomeView from '../views/HomeView.vue'
+import Home from '@/views/home/index.vue'
 
 const routes = [
     {
       path: '/',
       name: 'home',
       component: HomeView
+    },
+    {
+      path: '/homeIndex',
+      name: 'homeIndex',
+      component: Home
     }
   ]
 const router = createRouter({
